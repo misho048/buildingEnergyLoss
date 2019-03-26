@@ -13,7 +13,7 @@ namespace EnergyLoss
     public partial class MainView : Form
     {
         AreaView areaView = new AreaView();
-        Mechanics Mech;
+        
         public MainView()
         {
             InitializeComponent();
@@ -36,6 +36,8 @@ namespace EnergyLoss
 
         }
 
+      
+
         private void buttonCount_Click(object sender, EventArgs e)
         {
             if (areaView.DialogResult != DialogResult.OK)
@@ -46,27 +48,28 @@ namespace EnergyLoss
             {
                 double temperatureDifference = Math.Abs(Convert.ToDouble(textBoxAvgTemp.Text) - Convert.ToDouble(textBoxMinTemp.Text));
                 double heatingLenght = Convert.ToDouble(textBoxHeatingLenght.Text);
-                Mechanics mech = new Mechanics(areaView.ReturnHouse(),GetCondition(),temperatureDifference,heatingLenght);
-                MessageBox.Show(Convert.ToString(mech.DoSomething()) + "and number of days is " + heatingLenght);
+                Mechanics Mech = new Mechanics(GetCondition(),temperatureDifference,heatingLenght);
+                Mech.CreateHouse(areaView);
+                MessageBox.Show(Convert.ToString(Mech.DoSomething()) + "and number of days is " + heatingLenght);
             }
         }
 
         private double GetCondition()
         {
-            double something = 1.00;
+            double counter = 1.00;
             if (countryWindy.Checked)
             {
-                something += 0.03;
+                counter += 0.03;
             }
             if (buildingUnprotected.Checked)
             {
-                something += 0.03;
+                counter += 0.03;
             }
             else if (buildingUnfavorable.Checked)
             {
-                something += 0.06;
+                counter += 0.06;
             }
-            return something;
+            return counter;
         }
     }
 }

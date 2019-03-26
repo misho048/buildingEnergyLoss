@@ -28,59 +28,690 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPageFloor = new System.Windows.Forms.TabPage();
-            this.tabPageWall = new System.Windows.Forms.TabPage();
-            this.tabPageWindow = new System.Windows.Forms.TabPage();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBoxConcreteFloor = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBoxYtongFloor = new System.Windows.Forms.TextBox();
-            this.textBoxPolystyreFloor = new System.Windows.Forms.TextBox();
-            this.textBoxGlassWoolFloor = new System.Windows.Forms.TextBox();
-            this.textBoxPlasterFloor = new System.Windows.Forms.TextBox();
-            this.textBoxPlasterBoardFloor = new System.Windows.Forms.TextBox();
-            this.textBoxPLasterboardWall = new System.Windows.Forms.TextBox();
-            this.textBoxPlasterWall = new System.Windows.Forms.TextBox();
-            this.textBoxGlassWoolWall = new System.Windows.Forms.TextBox();
-            this.textBoxPolystyreWall = new System.Windows.Forms.TextBox();
-            this.textBoxYtongWall = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.textBoxConcreteWall = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.tabPageRoof = new System.Windows.Forms.TabPage();
-            this.textBoxPlasterBoardRoof = new System.Windows.Forms.TextBox();
-            this.textBoxPlasterRoof = new System.Windows.Forms.TextBox();
-            this.textBoxGlassWoolRoof = new System.Windows.Forms.TextBox();
-            this.textBoxPolystyreneRoof = new System.Windows.Forms.TextBox();
-            this.textBoxYtongRoof = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.textBoxConcreteRoof = new System.Windows.Forms.TextBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.textBoxFloorArea = new System.Windows.Forms.TextBox();
-            this.label20 = new System.Windows.Forms.Label();
-            this.textBoxWallArea = new System.Windows.Forms.TextBox();
-            this.label21 = new System.Windows.Forms.Label();
-            this.textBoxRoofArea = new System.Windows.Forms.TextBox();
             this.buttonAccept = new System.Windows.Forms.Button();
-            this.tabControl1.SuspendLayout();
-            this.tabPageFloor.SuspendLayout();
-            this.tabPageWall.SuspendLayout();
+            this.tabPageWindow = new System.Windows.Forms.TabPage();
+            this.tabPageRoof = new System.Windows.Forms.TabPage();
+            this.numericRoofArea = new System.Windows.Forms.NumericUpDown();
+            this.numeric4Roof = new System.Windows.Forms.NumericUpDown();
+            this.numeric3Roof = new System.Windows.Forms.NumericUpDown();
+            this.numeric2Roof = new System.Windows.Forms.NumericUpDown();
+            this.comboBox4Roof = new System.Windows.Forms.ComboBox();
+            this.comboBox3Roof = new System.Windows.Forms.ComboBox();
+            this.comboBox2Roof = new System.Windows.Forms.ComboBox();
+            this.numeric1Roof = new System.Windows.Forms.NumericUpDown();
+            this.comboBox1Roof = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.tabPageWall = new System.Windows.Forms.TabPage();
+            this.numeric4Wall = new System.Windows.Forms.NumericUpDown();
+            this.numeric3Wall = new System.Windows.Forms.NumericUpDown();
+            this.numeric2Wall = new System.Windows.Forms.NumericUpDown();
+            this.comboBox4Wall = new System.Windows.Forms.ComboBox();
+            this.comboBox3Wall = new System.Windows.Forms.ComboBox();
+            this.comboBox2Wall = new System.Windows.Forms.ComboBox();
+            this.numeric1Wall = new System.Windows.Forms.NumericUpDown();
+            this.comboBox1Wall = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.numericWallArea = new System.Windows.Forms.NumericUpDown();
+            this.label20 = new System.Windows.Forms.Label();
+            this.tabPageFloor = new System.Windows.Forms.TabPage();
+            this.numericFloorArea = new System.Windows.Forms.NumericUpDown();
+            this.numericWidth4Floor = new System.Windows.Forms.NumericUpDown();
+            this.numericWidth3Floor = new System.Windows.Forms.NumericUpDown();
+            this.numericWidth2Floor = new System.Windows.Forms.NumericUpDown();
+            this.comboBox4Floor = new System.Windows.Forms.ComboBox();
+            this.comboBox3Floor = new System.Windows.Forms.ComboBox();
+            this.comboBox2Floor = new System.Windows.Forms.ComboBox();
+            this.numericWidth1Floor = new System.Windows.Forms.NumericUpDown();
+            this.comboBox1Floor = new System.Windows.Forms.ComboBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPageRoof.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericRoofArea)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric4Roof)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric3Roof)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric2Roof)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric1Roof)).BeginInit();
+            this.tabPageWall.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric4Wall)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric3Wall)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric2Wall)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric1Wall)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericWallArea)).BeginInit();
+            this.tabPageFloor.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericFloorArea)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericWidth4Floor)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericWidth3Floor)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericWidth2Floor)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericWidth1Floor)).BeginInit();
+            this.tabControl1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // buttonAccept
+            // 
+            this.buttonAccept.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.buttonAccept.Location = new System.Drawing.Point(511, 411);
+            this.buttonAccept.Name = "buttonAccept";
+            this.buttonAccept.Size = new System.Drawing.Size(277, 33);
+            this.buttonAccept.TabIndex = 1;
+            this.buttonAccept.Text = "Accept ";
+            this.buttonAccept.UseVisualStyleBackColor = true;
+            this.buttonAccept.Click += new System.EventHandler(this.buttonAccept_Click);
+            // 
+            // tabPageWindow
+            // 
+            this.tabPageWindow.Location = new System.Drawing.Point(4, 22);
+            this.tabPageWindow.Name = "tabPageWindow";
+            this.tabPageWindow.Size = new System.Drawing.Size(791, 379);
+            this.tabPageWindow.TabIndex = 2;
+            this.tabPageWindow.Text = "Window";
+            this.tabPageWindow.UseVisualStyleBackColor = true;
+            // 
+            // tabPageRoof
+            // 
+            this.tabPageRoof.Controls.Add(this.numericRoofArea);
+            this.tabPageRoof.Controls.Add(this.numeric4Roof);
+            this.tabPageRoof.Controls.Add(this.numeric3Roof);
+            this.tabPageRoof.Controls.Add(this.numeric2Roof);
+            this.tabPageRoof.Controls.Add(this.comboBox4Roof);
+            this.tabPageRoof.Controls.Add(this.comboBox3Roof);
+            this.tabPageRoof.Controls.Add(this.comboBox2Roof);
+            this.tabPageRoof.Controls.Add(this.numeric1Roof);
+            this.tabPageRoof.Controls.Add(this.comboBox1Roof);
+            this.tabPageRoof.Controls.Add(this.label3);
+            this.tabPageRoof.Controls.Add(this.label4);
+            this.tabPageRoof.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.tabPageRoof.Location = new System.Drawing.Point(4, 22);
+            this.tabPageRoof.Name = "tabPageRoof";
+            this.tabPageRoof.Size = new System.Drawing.Size(791, 379);
+            this.tabPageRoof.TabIndex = 3;
+            this.tabPageRoof.Text = "Roof";
+            this.tabPageRoof.UseVisualStyleBackColor = true;
+            // 
+            // numericRoofArea
+            // 
+            this.numericRoofArea.DecimalPlaces = 2;
+            this.numericRoofArea.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.numericRoofArea.Location = new System.Drawing.Point(212, 23);
+            this.numericRoofArea.Maximum = new decimal(new int[] {
+            -1549105663,
+            118758,
+            0,
+            0});
+            this.numericRoofArea.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericRoofArea.Name = "numericRoofArea";
+            this.numericRoofArea.Size = new System.Drawing.Size(201, 20);
+            this.numericRoofArea.TabIndex = 33;
+            this.numericRoofArea.ThousandsSeparator = true;
+            this.numericRoofArea.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericRoofArea.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
+            // 
+            // numeric4Roof
+            // 
+            this.numeric4Roof.DecimalPlaces = 5;
+            this.numeric4Roof.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            131072});
+            this.numeric4Roof.Location = new System.Drawing.Point(264, 291);
+            this.numeric4Roof.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            262144});
+            this.numeric4Roof.Name = "numeric4Roof";
+            this.numeric4Roof.Size = new System.Drawing.Size(201, 20);
+            this.numeric4Roof.TabIndex = 32;
+            this.numeric4Roof.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            262144});
+            this.numeric4Roof.ValueChanged += new System.EventHandler(this.numericUpDown2_ValueChanged);
+            // 
+            // numeric3Roof
+            // 
+            this.numeric3Roof.DecimalPlaces = 5;
+            this.numeric3Roof.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            131072});
+            this.numeric3Roof.Location = new System.Drawing.Point(264, 240);
+            this.numeric3Roof.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            262144});
+            this.numeric3Roof.Name = "numeric3Roof";
+            this.numeric3Roof.Size = new System.Drawing.Size(201, 20);
+            this.numeric3Roof.TabIndex = 31;
+            this.numeric3Roof.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            262144});
+            this.numeric3Roof.ValueChanged += new System.EventHandler(this.numericUpDown3_ValueChanged);
+            // 
+            // numeric2Roof
+            // 
+            this.numeric2Roof.DecimalPlaces = 5;
+            this.numeric2Roof.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            131072});
+            this.numeric2Roof.Location = new System.Drawing.Point(264, 174);
+            this.numeric2Roof.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            262144});
+            this.numeric2Roof.Name = "numeric2Roof";
+            this.numeric2Roof.Size = new System.Drawing.Size(201, 20);
+            this.numeric2Roof.TabIndex = 30;
+            this.numeric2Roof.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            262144});
+            this.numeric2Roof.ValueChanged += new System.EventHandler(this.numericUpDown4_ValueChanged);
+            // 
+            // comboBox4Roof
+            // 
+            this.comboBox4Roof.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox4Roof.FormattingEnabled = true;
+            this.comboBox4Roof.Location = new System.Drawing.Point(24, 291);
+            this.comboBox4Roof.Name = "comboBox4Roof";
+            this.comboBox4Roof.Size = new System.Drawing.Size(203, 21);
+            this.comboBox4Roof.TabIndex = 29;
+            this.comboBox4Roof.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged_1);
+            // 
+            // comboBox3Roof
+            // 
+            this.comboBox3Roof.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox3Roof.FormattingEnabled = true;
+            this.comboBox3Roof.Location = new System.Drawing.Point(24, 240);
+            this.comboBox3Roof.Name = "comboBox3Roof";
+            this.comboBox3Roof.Size = new System.Drawing.Size(203, 21);
+            this.comboBox3Roof.TabIndex = 28;
+            this.comboBox3Roof.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
+            // 
+            // comboBox2Roof
+            // 
+            this.comboBox2Roof.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox2Roof.FormattingEnabled = true;
+            this.comboBox2Roof.Location = new System.Drawing.Point(24, 174);
+            this.comboBox2Roof.Name = "comboBox2Roof";
+            this.comboBox2Roof.Size = new System.Drawing.Size(203, 21);
+            this.comboBox2Roof.TabIndex = 27;
+            this.comboBox2Roof.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
+            // 
+            // numeric1Roof
+            // 
+            this.numeric1Roof.DecimalPlaces = 5;
+            this.numeric1Roof.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            131072});
+            this.numeric1Roof.Location = new System.Drawing.Point(264, 114);
+            this.numeric1Roof.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            262144});
+            this.numeric1Roof.Name = "numeric1Roof";
+            this.numeric1Roof.Size = new System.Drawing.Size(201, 20);
+            this.numeric1Roof.TabIndex = 26;
+            this.numeric1Roof.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            262144});
+            this.numeric1Roof.ValueChanged += new System.EventHandler(this.numericUpDown5_ValueChanged);
+            // 
+            // comboBox1Roof
+            // 
+            this.comboBox1Roof.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1Roof.Location = new System.Drawing.Point(24, 114);
+            this.comboBox1Roof.Name = "comboBox1Roof";
+            this.comboBox1Roof.Size = new System.Drawing.Size(203, 21);
+            this.comboBox1Roof.TabIndex = 25;
+            this.comboBox1Roof.SelectedIndexChanged += new System.EventHandler(this.comboBox4_SelectedIndexChanged);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label3.Location = new System.Drawing.Point(20, 19);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(115, 24);
+            this.label3.TabIndex = 24;
+            this.label3.Text = "Roof Area: ";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label4.Location = new System.Drawing.Point(260, 87);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(63, 24);
+            this.label4.TabIndex = 23;
+            this.label4.Text = "Width";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // tabPageWall
+            // 
+            this.tabPageWall.Controls.Add(this.numeric4Wall);
+            this.tabPageWall.Controls.Add(this.numeric3Wall);
+            this.tabPageWall.Controls.Add(this.numeric2Wall);
+            this.tabPageWall.Controls.Add(this.comboBox4Wall);
+            this.tabPageWall.Controls.Add(this.comboBox3Wall);
+            this.tabPageWall.Controls.Add(this.comboBox2Wall);
+            this.tabPageWall.Controls.Add(this.numeric1Wall);
+            this.tabPageWall.Controls.Add(this.comboBox1Wall);
+            this.tabPageWall.Controls.Add(this.label2);
+            this.tabPageWall.Controls.Add(this.numericWallArea);
+            this.tabPageWall.Controls.Add(this.label20);
+            this.tabPageWall.Location = new System.Drawing.Point(4, 22);
+            this.tabPageWall.Name = "tabPageWall";
+            this.tabPageWall.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageWall.Size = new System.Drawing.Size(791, 379);
+            this.tabPageWall.TabIndex = 1;
+            this.tabPageWall.Text = "Wall";
+            this.tabPageWall.UseVisualStyleBackColor = true;
+            // 
+            // numeric4Wall
+            // 
+            this.numeric4Wall.DecimalPlaces = 5;
+            this.numeric4Wall.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            131072});
+            this.numeric4Wall.Location = new System.Drawing.Point(268, 274);
+            this.numeric4Wall.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            262144});
+            this.numeric4Wall.Name = "numeric4Wall";
+            this.numeric4Wall.Size = new System.Drawing.Size(201, 20);
+            this.numeric4Wall.TabIndex = 34;
+            this.numeric4Wall.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            262144});
+            // 
+            // numeric3Wall
+            // 
+            this.numeric3Wall.DecimalPlaces = 5;
+            this.numeric3Wall.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            131072});
+            this.numeric3Wall.Location = new System.Drawing.Point(268, 219);
+            this.numeric3Wall.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            262144});
+            this.numeric3Wall.Name = "numeric3Wall";
+            this.numeric3Wall.Size = new System.Drawing.Size(201, 20);
+            this.numeric3Wall.TabIndex = 33;
+            this.numeric3Wall.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            262144});
+            // 
+            // numeric2Wall
+            // 
+            this.numeric2Wall.DecimalPlaces = 5;
+            this.numeric2Wall.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            131072});
+            this.numeric2Wall.Location = new System.Drawing.Point(268, 166);
+            this.numeric2Wall.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            262144});
+            this.numeric2Wall.Name = "numeric2Wall";
+            this.numeric2Wall.Size = new System.Drawing.Size(201, 20);
+            this.numeric2Wall.TabIndex = 32;
+            this.numeric2Wall.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            262144});
+            // 
+            // comboBox4Wall
+            // 
+            this.comboBox4Wall.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox4Wall.FormattingEnabled = true;
+            this.comboBox4Wall.Location = new System.Drawing.Point(28, 274);
+            this.comboBox4Wall.Name = "comboBox4Wall";
+            this.comboBox4Wall.Size = new System.Drawing.Size(203, 21);
+            this.comboBox4Wall.TabIndex = 31;
+            // 
+            // comboBox3Wall
+            // 
+            this.comboBox3Wall.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox3Wall.FormattingEnabled = true;
+            this.comboBox3Wall.Location = new System.Drawing.Point(28, 219);
+            this.comboBox3Wall.Name = "comboBox3Wall";
+            this.comboBox3Wall.Size = new System.Drawing.Size(203, 21);
+            this.comboBox3Wall.TabIndex = 30;
+            // 
+            // comboBox2Wall
+            // 
+            this.comboBox2Wall.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox2Wall.FormattingEnabled = true;
+            this.comboBox2Wall.Location = new System.Drawing.Point(28, 166);
+            this.comboBox2Wall.Name = "comboBox2Wall";
+            this.comboBox2Wall.Size = new System.Drawing.Size(203, 21);
+            this.comboBox2Wall.TabIndex = 29;
+            // 
+            // numeric1Wall
+            // 
+            this.numeric1Wall.DecimalPlaces = 5;
+            this.numeric1Wall.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            131072});
+            this.numeric1Wall.Location = new System.Drawing.Point(268, 106);
+            this.numeric1Wall.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            262144});
+            this.numeric1Wall.Name = "numeric1Wall";
+            this.numeric1Wall.Size = new System.Drawing.Size(201, 20);
+            this.numeric1Wall.TabIndex = 28;
+            this.numeric1Wall.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            262144});
+            // 
+            // comboBox1Wall
+            // 
+            this.comboBox1Wall.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1Wall.Location = new System.Drawing.Point(28, 106);
+            this.comboBox1Wall.Name = "comboBox1Wall";
+            this.comboBox1Wall.Size = new System.Drawing.Size(203, 21);
+            this.comboBox1Wall.TabIndex = 27;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label2.Location = new System.Drawing.Point(264, 79);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(63, 24);
+            this.label2.TabIndex = 26;
+            this.label2.Text = "Width";
+            // 
+            // numericWallArea
+            // 
+            this.numericWallArea.DecimalPlaces = 2;
+            this.numericWallArea.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.numericWallArea.Location = new System.Drawing.Point(199, 21);
+            this.numericWallArea.Maximum = new decimal(new int[] {
+            -1549105663,
+            118758,
+            0,
+            0});
+            this.numericWallArea.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericWallArea.Name = "numericWallArea";
+            this.numericWallArea.Size = new System.Drawing.Size(201, 20);
+            this.numericWallArea.TabIndex = 25;
+            this.numericWallArea.ThousandsSeparator = true;
+            this.numericWallArea.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label20.Location = new System.Drawing.Point(29, 17);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(112, 24);
+            this.label20.TabIndex = 24;
+            this.label20.Text = "Wall Area: ";
+            // 
+            // tabPageFloor
+            // 
+            this.tabPageFloor.Controls.Add(this.numericFloorArea);
+            this.tabPageFloor.Controls.Add(this.numericWidth4Floor);
+            this.tabPageFloor.Controls.Add(this.numericWidth3Floor);
+            this.tabPageFloor.Controls.Add(this.numericWidth2Floor);
+            this.tabPageFloor.Controls.Add(this.comboBox4Floor);
+            this.tabPageFloor.Controls.Add(this.comboBox3Floor);
+            this.tabPageFloor.Controls.Add(this.comboBox2Floor);
+            this.tabPageFloor.Controls.Add(this.numericWidth1Floor);
+            this.tabPageFloor.Controls.Add(this.comboBox1Floor);
+            this.tabPageFloor.Controls.Add(this.label19);
+            this.tabPageFloor.Controls.Add(this.label1);
+            this.tabPageFloor.Location = new System.Drawing.Point(4, 22);
+            this.tabPageFloor.Name = "tabPageFloor";
+            this.tabPageFloor.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageFloor.Size = new System.Drawing.Size(791, 379);
+            this.tabPageFloor.TabIndex = 0;
+            this.tabPageFloor.Text = "Floor";
+            this.tabPageFloor.UseVisualStyleBackColor = true;
+            // 
+            // numericFloorArea
+            // 
+            this.numericFloorArea.DecimalPlaces = 2;
+            this.numericFloorArea.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.numericFloorArea.Location = new System.Drawing.Point(201, 23);
+            this.numericFloorArea.Maximum = new decimal(new int[] {
+            -1549105663,
+            118758,
+            0,
+            0});
+            this.numericFloorArea.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericFloorArea.Name = "numericFloorArea";
+            this.numericFloorArea.Size = new System.Drawing.Size(201, 20);
+            this.numericFloorArea.TabIndex = 22;
+            this.numericFloorArea.ThousandsSeparator = true;
+            this.numericFloorArea.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // numericWidth4Floor
+            // 
+            this.numericWidth4Floor.DecimalPlaces = 5;
+            this.numericWidth4Floor.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            131072});
+            this.numericWidth4Floor.Location = new System.Drawing.Point(253, 291);
+            this.numericWidth4Floor.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            262144});
+            this.numericWidth4Floor.Name = "numericWidth4Floor";
+            this.numericWidth4Floor.Size = new System.Drawing.Size(201, 20);
+            this.numericWidth4Floor.TabIndex = 21;
+            this.numericWidth4Floor.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            262144});
+            // 
+            // numericWidth3Floor
+            // 
+            this.numericWidth3Floor.DecimalPlaces = 5;
+            this.numericWidth3Floor.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            131072});
+            this.numericWidth3Floor.Location = new System.Drawing.Point(253, 240);
+            this.numericWidth3Floor.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            262144});
+            this.numericWidth3Floor.Name = "numericWidth3Floor";
+            this.numericWidth3Floor.Size = new System.Drawing.Size(201, 20);
+            this.numericWidth3Floor.TabIndex = 20;
+            this.numericWidth3Floor.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            262144});
+            // 
+            // numericWidth2Floor
+            // 
+            this.numericWidth2Floor.DecimalPlaces = 5;
+            this.numericWidth2Floor.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            131072});
+            this.numericWidth2Floor.Location = new System.Drawing.Point(253, 174);
+            this.numericWidth2Floor.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            262144});
+            this.numericWidth2Floor.Name = "numericWidth2Floor";
+            this.numericWidth2Floor.Size = new System.Drawing.Size(201, 20);
+            this.numericWidth2Floor.TabIndex = 19;
+            this.numericWidth2Floor.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            262144});
+            // 
+            // comboBox4Floor
+            // 
+            this.comboBox4Floor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox4Floor.FormattingEnabled = true;
+            this.comboBox4Floor.Location = new System.Drawing.Point(13, 291);
+            this.comboBox4Floor.Name = "comboBox4Floor";
+            this.comboBox4Floor.Size = new System.Drawing.Size(203, 21);
+            this.comboBox4Floor.TabIndex = 18;
+            // 
+            // comboBox3Floor
+            // 
+            this.comboBox3Floor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox3Floor.FormattingEnabled = true;
+            this.comboBox3Floor.Location = new System.Drawing.Point(13, 240);
+            this.comboBox3Floor.Name = "comboBox3Floor";
+            this.comboBox3Floor.Size = new System.Drawing.Size(203, 21);
+            this.comboBox3Floor.TabIndex = 17;
+            // 
+            // comboBox2Floor
+            // 
+            this.comboBox2Floor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox2Floor.FormattingEnabled = true;
+            this.comboBox2Floor.Location = new System.Drawing.Point(13, 174);
+            this.comboBox2Floor.Name = "comboBox2Floor";
+            this.comboBox2Floor.Size = new System.Drawing.Size(203, 21);
+            this.comboBox2Floor.TabIndex = 16;
+            // 
+            // numericWidth1Floor
+            // 
+            this.numericWidth1Floor.DecimalPlaces = 5;
+            this.numericWidth1Floor.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            131072});
+            this.numericWidth1Floor.Location = new System.Drawing.Point(253, 114);
+            this.numericWidth1Floor.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            262144});
+            this.numericWidth1Floor.Name = "numericWidth1Floor";
+            this.numericWidth1Floor.Size = new System.Drawing.Size(201, 20);
+            this.numericWidth1Floor.TabIndex = 15;
+            this.numericWidth1Floor.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            196608});
+            this.numericWidth1Floor.ValueChanged += new System.EventHandler(this.numericWidth1Floor_ValueChanged);
+            // 
+            // comboBox1Floor
+            // 
+            this.comboBox1Floor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1Floor.Location = new System.Drawing.Point(13, 114);
+            this.comboBox1Floor.Name = "comboBox1Floor";
+            this.comboBox1Floor.Size = new System.Drawing.Size(203, 21);
+            this.comboBox1Floor.TabIndex = 14;
+            this.comboBox1Floor.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label19.Location = new System.Drawing.Point(9, 19);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(121, 24);
+            this.label19.TabIndex = 12;
+            this.label19.Text = "Floor Area: ";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.Location = new System.Drawing.Point(249, 87);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(63, 24);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Width";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // tabControl1
             // 
@@ -94,457 +725,6 @@
             this.tabControl1.Size = new System.Drawing.Size(799, 405);
             this.tabControl1.TabIndex = 0;
             // 
-            // tabPageFloor
-            // 
-            this.tabPageFloor.Controls.Add(this.textBoxFloorArea);
-            this.tabPageFloor.Controls.Add(this.label19);
-            this.tabPageFloor.Controls.Add(this.textBoxPlasterBoardFloor);
-            this.tabPageFloor.Controls.Add(this.textBoxPlasterFloor);
-            this.tabPageFloor.Controls.Add(this.textBoxGlassWoolFloor);
-            this.tabPageFloor.Controls.Add(this.textBoxPolystyreFloor);
-            this.tabPageFloor.Controls.Add(this.textBoxYtongFloor);
-            this.tabPageFloor.Controls.Add(this.label6);
-            this.tabPageFloor.Controls.Add(this.label5);
-            this.tabPageFloor.Controls.Add(this.label4);
-            this.tabPageFloor.Controls.Add(this.textBoxConcreteFloor);
-            this.tabPageFloor.Controls.Add(this.label3);
-            this.tabPageFloor.Controls.Add(this.label2);
-            this.tabPageFloor.Controls.Add(this.label1);
-            this.tabPageFloor.Location = new System.Drawing.Point(4, 22);
-            this.tabPageFloor.Name = "tabPageFloor";
-            this.tabPageFloor.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageFloor.Size = new System.Drawing.Size(791, 379);
-            this.tabPageFloor.TabIndex = 0;
-            this.tabPageFloor.Text = "Floor";
-            this.tabPageFloor.UseVisualStyleBackColor = true;
-            // 
-            // tabPageWall
-            // 
-            this.tabPageWall.Controls.Add(this.textBoxWallArea);
-            this.tabPageWall.Controls.Add(this.label20);
-            this.tabPageWall.Controls.Add(this.textBoxPLasterboardWall);
-            this.tabPageWall.Controls.Add(this.textBoxPlasterWall);
-            this.tabPageWall.Controls.Add(this.textBoxGlassWoolWall);
-            this.tabPageWall.Controls.Add(this.textBoxPolystyreWall);
-            this.tabPageWall.Controls.Add(this.textBoxYtongWall);
-            this.tabPageWall.Controls.Add(this.label7);
-            this.tabPageWall.Controls.Add(this.label8);
-            this.tabPageWall.Controls.Add(this.label9);
-            this.tabPageWall.Controls.Add(this.textBoxConcreteWall);
-            this.tabPageWall.Controls.Add(this.label10);
-            this.tabPageWall.Controls.Add(this.label11);
-            this.tabPageWall.Controls.Add(this.label12);
-            this.tabPageWall.Location = new System.Drawing.Point(4, 22);
-            this.tabPageWall.Name = "tabPageWall";
-            this.tabPageWall.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageWall.Size = new System.Drawing.Size(791, 379);
-            this.tabPageWall.TabIndex = 1;
-            this.tabPageWall.Text = "Wall";
-            this.tabPageWall.UseVisualStyleBackColor = true;
-            // 
-            // tabPageWindow
-            // 
-            this.tabPageWindow.Location = new System.Drawing.Point(4, 22);
-            this.tabPageWindow.Name = "tabPageWindow";
-            this.tabPageWindow.Size = new System.Drawing.Size(791, 379);
-            this.tabPageWindow.TabIndex = 2;
-            this.tabPageWindow.Text = "Window";
-            this.tabPageWindow.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.Location = new System.Drawing.Point(9, 64);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(189, 24);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Width of Concrete: ";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label2.Location = new System.Drawing.Point(9, 117);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(158, 24);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Width of Ytong: ";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label3.Location = new System.Drawing.Point(9, 168);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(212, 24);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Width of Polystyrene: ";
-            // 
-            // textBoxConcreteFloor
-            // 
-            this.textBoxConcreteFloor.Location = new System.Drawing.Point(283, 69);
-            this.textBoxConcreteFloor.Name = "textBoxConcreteFloor";
-            this.textBoxConcreteFloor.Size = new System.Drawing.Size(229, 20);
-            this.textBoxConcreteFloor.TabIndex = 3;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label4.Location = new System.Drawing.Point(6, 217);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(209, 24);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Width of Glass Wool: ";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label5.Location = new System.Drawing.Point(7, 269);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(167, 24);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "Width of Plaster: ";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label6.Location = new System.Drawing.Point(7, 320);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(214, 24);
-            this.label6.TabIndex = 6;
-            this.label6.Text = "Width of Plasteboard: ";
-            // 
-            // textBoxYtongFloor
-            // 
-            this.textBoxYtongFloor.Location = new System.Drawing.Point(283, 122);
-            this.textBoxYtongFloor.Name = "textBoxYtongFloor";
-            this.textBoxYtongFloor.Size = new System.Drawing.Size(229, 20);
-            this.textBoxYtongFloor.TabIndex = 7;
-            // 
-            // textBoxPolystyreFloor
-            // 
-            this.textBoxPolystyreFloor.Location = new System.Drawing.Point(283, 173);
-            this.textBoxPolystyreFloor.Name = "textBoxPolystyreFloor";
-            this.textBoxPolystyreFloor.Size = new System.Drawing.Size(229, 20);
-            this.textBoxPolystyreFloor.TabIndex = 8;
-            // 
-            // textBoxGlassWoolFloor
-            // 
-            this.textBoxGlassWoolFloor.Location = new System.Drawing.Point(283, 222);
-            this.textBoxGlassWoolFloor.Name = "textBoxGlassWoolFloor";
-            this.textBoxGlassWoolFloor.Size = new System.Drawing.Size(229, 20);
-            this.textBoxGlassWoolFloor.TabIndex = 9;
-            // 
-            // textBoxPlasterFloor
-            // 
-            this.textBoxPlasterFloor.Location = new System.Drawing.Point(283, 274);
-            this.textBoxPlasterFloor.Name = "textBoxPlasterFloor";
-            this.textBoxPlasterFloor.Size = new System.Drawing.Size(229, 20);
-            this.textBoxPlasterFloor.TabIndex = 10;
-            // 
-            // textBoxPlasterBoardFloor
-            // 
-            this.textBoxPlasterBoardFloor.Location = new System.Drawing.Point(283, 325);
-            this.textBoxPlasterBoardFloor.Name = "textBoxPlasterBoardFloor";
-            this.textBoxPlasterBoardFloor.Size = new System.Drawing.Size(229, 20);
-            this.textBoxPlasterBoardFloor.TabIndex = 11;
-            // 
-            // textBoxPLasterboardWall
-            // 
-            this.textBoxPLasterboardWall.Location = new System.Drawing.Point(306, 311);
-            this.textBoxPLasterboardWall.Name = "textBoxPLasterboardWall";
-            this.textBoxPLasterboardWall.Size = new System.Drawing.Size(229, 20);
-            this.textBoxPLasterboardWall.TabIndex = 23;
-            // 
-            // textBoxPlasterWall
-            // 
-            this.textBoxPlasterWall.Location = new System.Drawing.Point(306, 260);
-            this.textBoxPlasterWall.Name = "textBoxPlasterWall";
-            this.textBoxPlasterWall.Size = new System.Drawing.Size(229, 20);
-            this.textBoxPlasterWall.TabIndex = 22;
-            // 
-            // textBoxGlassWoolWall
-            // 
-            this.textBoxGlassWoolWall.Location = new System.Drawing.Point(306, 208);
-            this.textBoxGlassWoolWall.Name = "textBoxGlassWoolWall";
-            this.textBoxGlassWoolWall.Size = new System.Drawing.Size(229, 20);
-            this.textBoxGlassWoolWall.TabIndex = 21;
-            // 
-            // textBoxPolystyreWall
-            // 
-            this.textBoxPolystyreWall.Location = new System.Drawing.Point(306, 158);
-            this.textBoxPolystyreWall.Name = "textBoxPolystyreWall";
-            this.textBoxPolystyreWall.Size = new System.Drawing.Size(229, 20);
-            this.textBoxPolystyreWall.TabIndex = 20;
-            // 
-            // textBoxYtongWall
-            // 
-            this.textBoxYtongWall.Location = new System.Drawing.Point(306, 108);
-            this.textBoxYtongWall.Name = "textBoxYtongWall";
-            this.textBoxYtongWall.Size = new System.Drawing.Size(229, 20);
-            this.textBoxYtongWall.TabIndex = 19;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label7.Location = new System.Drawing.Point(29, 306);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(214, 24);
-            this.label7.TabIndex = 18;
-            this.label7.Text = "Width of Plasteboard: ";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label8.Location = new System.Drawing.Point(29, 255);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(167, 24);
-            this.label8.TabIndex = 17;
-            this.label8.Text = "Width of Plaster: ";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label9.Location = new System.Drawing.Point(29, 203);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(209, 24);
-            this.label9.TabIndex = 16;
-            this.label9.Text = "Width of Glass Wool: ";
-            // 
-            // textBoxConcreteWall
-            // 
-            this.textBoxConcreteWall.Location = new System.Drawing.Point(306, 63);
-            this.textBoxConcreteWall.Name = "textBoxConcreteWall";
-            this.textBoxConcreteWall.Size = new System.Drawing.Size(229, 20);
-            this.textBoxConcreteWall.TabIndex = 15;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label10.Location = new System.Drawing.Point(30, 153);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(212, 24);
-            this.label10.TabIndex = 14;
-            this.label10.Text = "Width of Polystyrene: ";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label11.Location = new System.Drawing.Point(29, 103);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(158, 24);
-            this.label11.TabIndex = 13;
-            this.label11.Text = "Width of Ytong: ";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label12.Location = new System.Drawing.Point(30, 58);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(189, 24);
-            this.label12.TabIndex = 12;
-            this.label12.Text = "Width of Concrete: ";
-            // 
-            // tabPageRoof
-            // 
-            this.tabPageRoof.Controls.Add(this.textBoxRoofArea);
-            this.tabPageRoof.Controls.Add(this.label21);
-            this.tabPageRoof.Controls.Add(this.textBoxPlasterBoardRoof);
-            this.tabPageRoof.Controls.Add(this.textBoxPlasterRoof);
-            this.tabPageRoof.Controls.Add(this.textBoxGlassWoolRoof);
-            this.tabPageRoof.Controls.Add(this.textBoxPolystyreneRoof);
-            this.tabPageRoof.Controls.Add(this.textBoxYtongRoof);
-            this.tabPageRoof.Controls.Add(this.label13);
-            this.tabPageRoof.Controls.Add(this.label14);
-            this.tabPageRoof.Controls.Add(this.label15);
-            this.tabPageRoof.Controls.Add(this.textBoxConcreteRoof);
-            this.tabPageRoof.Controls.Add(this.label16);
-            this.tabPageRoof.Controls.Add(this.label17);
-            this.tabPageRoof.Controls.Add(this.label18);
-            this.tabPageRoof.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.tabPageRoof.Location = new System.Drawing.Point(4, 22);
-            this.tabPageRoof.Name = "tabPageRoof";
-            this.tabPageRoof.Size = new System.Drawing.Size(791, 379);
-            this.tabPageRoof.TabIndex = 3;
-            this.tabPageRoof.Text = "Roof";
-            this.tabPageRoof.UseVisualStyleBackColor = true;
-            // 
-            // textBoxPlasterBoardRoof
-            // 
-            this.textBoxPlasterBoardRoof.Location = new System.Drawing.Point(307, 321);
-            this.textBoxPlasterBoardRoof.Name = "textBoxPlasterBoardRoof";
-            this.textBoxPlasterBoardRoof.Size = new System.Drawing.Size(229, 20);
-            this.textBoxPlasterBoardRoof.TabIndex = 35;
-            // 
-            // textBoxPlasterRoof
-            // 
-            this.textBoxPlasterRoof.Location = new System.Drawing.Point(307, 273);
-            this.textBoxPlasterRoof.Name = "textBoxPlasterRoof";
-            this.textBoxPlasterRoof.Size = new System.Drawing.Size(229, 20);
-            this.textBoxPlasterRoof.TabIndex = 34;
-            // 
-            // textBoxGlassWoolRoof
-            // 
-            this.textBoxGlassWoolRoof.Location = new System.Drawing.Point(307, 230);
-            this.textBoxGlassWoolRoof.Name = "textBoxGlassWoolRoof";
-            this.textBoxGlassWoolRoof.Size = new System.Drawing.Size(229, 20);
-            this.textBoxGlassWoolRoof.TabIndex = 33;
-            // 
-            // textBoxPolystyreneRoof
-            // 
-            this.textBoxPolystyreneRoof.Location = new System.Drawing.Point(307, 179);
-            this.textBoxPolystyreneRoof.Name = "textBoxPolystyreneRoof";
-            this.textBoxPolystyreneRoof.Size = new System.Drawing.Size(229, 20);
-            this.textBoxPolystyreneRoof.TabIndex = 32;
-            // 
-            // textBoxYtongRoof
-            // 
-            this.textBoxYtongRoof.Location = new System.Drawing.Point(307, 128);
-            this.textBoxYtongRoof.Name = "textBoxYtongRoof";
-            this.textBoxYtongRoof.Size = new System.Drawing.Size(229, 20);
-            this.textBoxYtongRoof.TabIndex = 31;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label13.Location = new System.Drawing.Point(30, 317);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(214, 24);
-            this.label13.TabIndex = 30;
-            this.label13.Text = "Width of Plasteboard: ";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label14.Location = new System.Drawing.Point(30, 268);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(167, 24);
-            this.label14.TabIndex = 29;
-            this.label14.Text = "Width of Plaster: ";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label15.Location = new System.Drawing.Point(30, 226);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(209, 24);
-            this.label15.TabIndex = 28;
-            this.label15.Text = "Width of Glass Wool: ";
-            // 
-            // textBoxConcreteRoof
-            // 
-            this.textBoxConcreteRoof.Location = new System.Drawing.Point(307, 78);
-            this.textBoxConcreteRoof.Name = "textBoxConcreteRoof";
-            this.textBoxConcreteRoof.Size = new System.Drawing.Size(229, 20);
-            this.textBoxConcreteRoof.TabIndex = 27;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label16.Location = new System.Drawing.Point(30, 175);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(212, 24);
-            this.label16.TabIndex = 26;
-            this.label16.Text = "Width of Polystyrene: ";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label17.Location = new System.Drawing.Point(30, 124);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(158, 24);
-            this.label17.TabIndex = 25;
-            this.label17.Text = "Width of Ytong: ";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label18.Location = new System.Drawing.Point(30, 74);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(189, 24);
-            this.label18.TabIndex = 24;
-            this.label18.Text = "Width of Concrete: ";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label19.Location = new System.Drawing.Point(9, 19);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(121, 24);
-            this.label19.TabIndex = 12;
-            this.label19.Text = "Floor Area: ";
-            // 
-            // textBoxFloorArea
-            // 
-            this.textBoxFloorArea.AllowDrop = true;
-            this.textBoxFloorArea.Location = new System.Drawing.Point(283, 24);
-            this.textBoxFloorArea.Name = "textBoxFloorArea";
-            this.textBoxFloorArea.Size = new System.Drawing.Size(229, 20);
-            this.textBoxFloorArea.TabIndex = 13;
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label20.Location = new System.Drawing.Point(29, 17);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(112, 24);
-            this.label20.TabIndex = 24;
-            this.label20.Text = "Wall Area: ";
-            // 
-            // textBoxWallArea
-            // 
-            this.textBoxWallArea.Location = new System.Drawing.Point(306, 17);
-            this.textBoxWallArea.Name = "textBoxWallArea";
-            this.textBoxWallArea.Size = new System.Drawing.Size(229, 20);
-            this.textBoxWallArea.TabIndex = 25;
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label21.Location = new System.Drawing.Point(30, 33);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(138, 24);
-            this.label21.TabIndex = 36;
-            this.label21.Text = "Area of Roof: ";
-            // 
-            // textBoxRoofArea
-            // 
-            this.textBoxRoofArea.Location = new System.Drawing.Point(307, 37);
-            this.textBoxRoofArea.Name = "textBoxRoofArea";
-            this.textBoxRoofArea.Size = new System.Drawing.Size(229, 20);
-            this.textBoxRoofArea.TabIndex = 37;
-            // 
-            // buttonAccept
-            // 
-            this.buttonAccept.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.buttonAccept.Location = new System.Drawing.Point(511, 411);
-            this.buttonAccept.Name = "buttonAccept";
-            this.buttonAccept.Size = new System.Drawing.Size(277, 33);
-            this.buttonAccept.TabIndex = 1;
-            this.buttonAccept.Text = "Accept ";
-            this.buttonAccept.UseVisualStyleBackColor = true;
-            this.buttonAccept.Click += new System.EventHandler(this.buttonAccept_Click);
-            // 
             // AreaView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -554,66 +734,71 @@
             this.Controls.Add(this.tabControl1);
             this.Name = "AreaView";
             this.Text = "Form1";
-            this.tabControl1.ResumeLayout(false);
-            this.tabPageFloor.ResumeLayout(false);
-            this.tabPageFloor.PerformLayout();
-            this.tabPageWall.ResumeLayout(false);
-            this.tabPageWall.PerformLayout();
             this.tabPageRoof.ResumeLayout(false);
             this.tabPageRoof.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericRoofArea)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric4Roof)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric3Roof)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric2Roof)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric1Roof)).EndInit();
+            this.tabPageWall.ResumeLayout(false);
+            this.tabPageWall.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric4Wall)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric3Wall)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric2Wall)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric1Wall)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericWallArea)).EndInit();
+            this.tabPageFloor.ResumeLayout(false);
+            this.tabPageFloor.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericFloorArea)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericWidth4Floor)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericWidth3Floor)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericWidth2Floor)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericWidth1Floor)).EndInit();
+            this.tabControl1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPageFloor;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TabPage tabPageWall;
-        private System.Windows.Forms.TabPage tabPageWindow;
-        public System.Windows.Forms.TextBox textBoxFloorArea;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.TextBox textBoxPlasterBoardFloor;
-        private System.Windows.Forms.TextBox textBoxPlasterFloor;
-        private System.Windows.Forms.TextBox textBoxGlassWoolFloor;
-        private System.Windows.Forms.TextBox textBoxPolystyreFloor;
-        private System.Windows.Forms.TextBox textBoxYtongFloor;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBoxConcreteFloor;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBoxWallArea;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.TextBox textBoxPLasterboardWall;
-        private System.Windows.Forms.TextBox textBoxPlasterWall;
-        private System.Windows.Forms.TextBox textBoxGlassWoolWall;
-        private System.Windows.Forms.TextBox textBoxPolystyreWall;
-        private System.Windows.Forms.TextBox textBoxYtongWall;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBoxConcreteWall;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TabPage tabPageRoof;
-        private System.Windows.Forms.TextBox textBoxRoofArea;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.TextBox textBoxPlasterBoardRoof;
-        private System.Windows.Forms.TextBox textBoxPlasterRoof;
-        private System.Windows.Forms.TextBox textBoxGlassWoolRoof;
-        private System.Windows.Forms.TextBox textBoxPolystyreneRoof;
-        private System.Windows.Forms.TextBox textBoxYtongRoof;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox textBoxConcreteRoof;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Button buttonAccept;
+        private System.Windows.Forms.TabPage tabPageWindow;
+        private System.Windows.Forms.TabPage tabPageRoof;
+        private System.Windows.Forms.NumericUpDown numericRoofArea;
+        private System.Windows.Forms.NumericUpDown numeric4Roof;
+        private System.Windows.Forms.NumericUpDown numeric3Roof;
+        private System.Windows.Forms.NumericUpDown numeric2Roof;
+        private System.Windows.Forms.ComboBox comboBox4Roof;
+        private System.Windows.Forms.ComboBox comboBox3Roof;
+        private System.Windows.Forms.ComboBox comboBox2Roof;
+        private System.Windows.Forms.NumericUpDown numeric1Roof;
+        private System.Windows.Forms.ComboBox comboBox1Roof;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TabPage tabPageWall;
+        private System.Windows.Forms.NumericUpDown numeric4Wall;
+        private System.Windows.Forms.NumericUpDown numeric3Wall;
+        private System.Windows.Forms.NumericUpDown numeric2Wall;
+        private System.Windows.Forms.ComboBox comboBox4Wall;
+        private System.Windows.Forms.ComboBox comboBox3Wall;
+        private System.Windows.Forms.ComboBox comboBox2Wall;
+        private System.Windows.Forms.NumericUpDown numeric1Wall;
+        private System.Windows.Forms.ComboBox comboBox1Wall;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.NumericUpDown numericWallArea;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.TabPage tabPageFloor;
+        private System.Windows.Forms.NumericUpDown numericFloorArea;
+        private System.Windows.Forms.NumericUpDown numericWidth4Floor;
+        private System.Windows.Forms.NumericUpDown numericWidth3Floor;
+        private System.Windows.Forms.NumericUpDown numericWidth2Floor;
+        private System.Windows.Forms.ComboBox comboBox4Floor;
+        private System.Windows.Forms.ComboBox comboBox3Floor;
+        private System.Windows.Forms.ComboBox comboBox2Floor;
+        private System.Windows.Forms.NumericUpDown numericWidth1Floor;
+        private System.Windows.Forms.ComboBox comboBox1Floor;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TabControl tabControl1;
     }
 }

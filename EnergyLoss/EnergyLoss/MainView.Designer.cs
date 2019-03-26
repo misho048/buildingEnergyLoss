@@ -85,6 +85,7 @@
             this.textBoxAvgTemp.Name = "textBoxAvgTemp";
             this.textBoxAvgTemp.Size = new System.Drawing.Size(218, 20);
             this.textBoxAvgTemp.TabIndex = 3;
+            this.textBoxAvgTemp.Text = "0";
             // 
             // labelTemeperatureAvg
             // 
@@ -103,6 +104,7 @@
             this.textBoxMinTemp.Name = "textBoxMinTemp";
             this.textBoxMinTemp.Size = new System.Drawing.Size(218, 20);
             this.textBoxMinTemp.TabIndex = 5;
+            this.textBoxMinTemp.Text = "0";
             // 
             // labelCountryType
             // 
@@ -163,10 +165,12 @@
             this.textBoxHeatingLenght.Name = "textBoxHeatingLenght";
             this.textBoxHeatingLenght.Size = new System.Drawing.Size(218, 20);
             this.textBoxHeatingLenght.TabIndex = 11;
+            this.textBoxHeatingLenght.Text = "1";
             // 
             // countryNormal
             // 
             this.countryNormal.AutoSize = true;
+            this.countryNormal.Checked = true;
             this.countryNormal.Location = new System.Drawing.Point(44, 11);
             this.countryNormal.Name = "countryNormal";
             this.countryNormal.Size = new System.Drawing.Size(58, 17);
@@ -182,7 +186,6 @@
             this.countryWindy.Name = "countryWindy";
             this.countryWindy.Size = new System.Drawing.Size(55, 17);
             this.countryWindy.TabIndex = 13;
-            this.countryWindy.TabStop = true;
             this.countryWindy.Text = "Windy";
             this.countryWindy.UseVisualStyleBackColor = true;
             // 
@@ -197,6 +200,7 @@
             // buildingProtected
             // 
             this.buildingProtected.AutoSize = true;
+            this.buildingProtected.Checked = true;
             this.buildingProtected.Location = new System.Drawing.Point(36, 19);
             this.buildingProtected.Name = "buildingProtected";
             this.buildingProtected.Size = new System.Drawing.Size(71, 17);
@@ -212,7 +216,6 @@
             this.buildingUnprotected.Name = "buildingUnprotected";
             this.buildingUnprotected.Size = new System.Drawing.Size(84, 17);
             this.buildingUnprotected.TabIndex = 17;
-            this.buildingUnprotected.TabStop = true;
             this.buildingUnprotected.Text = "Unprotected";
             this.buildingUnprotected.UseVisualStyleBackColor = true;
             // 
@@ -244,7 +247,6 @@
             this.buildingUnfavorable.Name = "buildingUnfavorable";
             this.buildingUnfavorable.Size = new System.Drawing.Size(134, 17);
             this.buildingUnfavorable.TabIndex = 18;
-            this.buildingUnfavorable.TabStop = true;
             this.buildingUnfavorable.Text = "Unfavorable conditions";
             this.buildingUnfavorable.UseVisualStyleBackColor = true;
             // 

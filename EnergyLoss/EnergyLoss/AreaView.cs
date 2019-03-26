@@ -8,75 +8,188 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace EnergyLoss
 {
     public partial class AreaView : Form
     {
-        public List<IWalls> house;
+     
+        public Dictionary<string, double> mapOfMaterial;
+        private List<ComboBox> _listOfBoxes;
+
         public AreaView()
-        {
-            house= new List<IWalls>();
+
+        {            
             InitializeComponent();
+            mapOfMaterial = DataLayer.LoadFromFile();
+            FillComboBoxes();
         }
+
+        private void FillComboBoxes()
+        {
+            _listOfBoxes = new List<ComboBox>() {
+            comboBox1Floor,comboBox2Floor,comboBox3Floor,comboBox4Floor,
+            comboBox1Wall,comboBox2Wall,comboBox3Wall,comboBox4Wall,
+            comboBox1Roof,comboBox2Roof,comboBox3Roof,comboBox4Roof
+            };
+            foreach (var comboBox in _listOfBoxes)
+            {
+                foreach (var key in mapOfMaterial)
+                {
+
+                    comboBox.Items.Add(key.Key.ToString());
+                }
+                comboBox.SelectedIndex = 0;
+            }
+
+
+        }
+
 
         private void label1_Click(object sender, EventArgs e)
         {
 
         }
 
-        public List<IWalls> ReturnHouse()
+
+        public double[] ReturnArea()
         {
-            return house;
+            return new double[] { Convert.ToDouble(numericFloorArea.Text), Convert.ToDouble(numericWallArea.Text), Convert.ToDouble(numericRoofArea.Text) };
         }
-        
 
         private void buttonAccept_Click(object sender, EventArgs e)
         {
-         
-            house.Add(CreateFloor());
-            house.Add(CreateRoof());
-            house.Add(CreateWall());
+            if (true)
+            {
+                DialogResult = DialogResult.OK;
+            }
+            else
+            {
+                MessageBox.Show("Don't leave any empty values");
+            }
+        }
+
+        //private bool CheckComboBoxes()
+        //{
             
-            DialogResult = DialogResult.OK;
+        //    foreach(var box in _listOfBoxes)
+        //    {
+        //        try
+        //        {
+        //           string something= box.SelectedValue.ToString();
+        //        }
+        //        catch (NullReferenceException)
+        //        {
+        //            return false;
+        //        }
+                
+        //    }
+        //    return true;
+        //}
 
+        public List<(double, string)> CreateFloor()
+        {
+            var tupleList = new List<(double width, string value)>
+            {
+                (Convert.ToDouble(numericWidth1Floor.Value),comboBox1Floor.SelectedItem.ToString()),
+                (Convert.ToDouble(numericWidth2Floor.Value),comboBox2Floor.SelectedItem.ToString()),
+                (Convert.ToDouble(numericWidth3Floor.Value),comboBox3Floor.SelectedItem.ToString()),
+                (Convert.ToDouble(numericWidth4Floor.Value),comboBox4Floor.SelectedItem.ToString()),
+            };
+            return tupleList;       
 
         }
 
-        private IWalls CreateFloor()
+        public List<(double, string)> CreateWall()
         {
-            List<Material> materialList = new List<Material>();
-            materialList.Add(new Material(Convert.ToDouble(textBoxConcreteFloor.Text), 1.74, "Beton"));
-            materialList.Add(new Material(Convert.ToDouble(textBoxYtongFloor.Text), 0.09, "Ytong"));
-            materialList.Add(new Material(Convert.ToDouble(textBoxPolystyreFloor.Text), 0.03, "Polystyren"));
-            materialList.Add(new Material(Convert.ToDouble(textBoxPlasterFloor.Text), 0.25, "Omietka"));
-            materialList.Add(new Material(Convert.ToDouble(textBoxGlassWoolFloor.Text), 0.039, "Sklena Vata"));
-            materialList.Add(new Material(Convert.ToDouble(textBoxPlasterBoardFloor.Text), 0.34, "Sadrokarton"));
-            return new Floor(Convert.ToDouble(textBoxFloorArea.Text), materialList);
+            var tupleList = new List<(double width, string value)>
+            {
+                (Convert.ToDouble(numeric1Wall.Value),comboBox1Wall.SelectedItem.ToString()),
+                (Convert.ToDouble(numeric2Wall.Value),comboBox2Wall.SelectedItem.ToString()),
+                (Convert.ToDouble(numeric3Wall.Value),comboBox3Wall.SelectedItem.ToString()),
+                (Convert.ToDouble(numeric4Wall.Value),comboBox4Wall.SelectedItem.ToString())
+
+            };
+            return tupleList;
+       
+        }
+
+        public List<(double, string)> CreateRoof()
+        {
+            var tupleList = new List<(double width, string value)>
+            {
+                (Convert.ToDouble(numeric1Roof.Value),comboBox1Roof.SelectedItem.ToString()),
+                (Convert.ToDouble(numeric2Roof.Value),comboBox2Roof.SelectedItem.ToString()),
+                (Convert.ToDouble(numeric3Roof.Value),comboBox3Roof.SelectedItem.ToString()),
+                (Convert.ToDouble(numeric4Roof.Value),comboBox4Roof.SelectedItem.ToString())
+
+            };
+            return tupleList;         
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
         }
 
-        private IWalls CreateWall()
+        private void label3_Click(object sender, EventArgs e)
         {
-            List<Material> materialList = new List<Material>();
-            materialList.Add(new Material(Convert.ToDouble(textBoxConcreteWall.Text), 1.74, "Beton"));
-            materialList.Add(new Material(Convert.ToDouble(textBoxYtongWall.Text), 0.09, "Ytong"));
-            materialList.Add(new Material(Convert.ToDouble(textBoxPolystyreWall.Text), 0.03, "Polystyren"));
-            materialList.Add(new Material(Convert.ToDouble(textBoxPlasterWall.Text), 0.25, "Omietka"));
-            materialList.Add(new Material(Convert.ToDouble(textBoxGlassWoolWall.Text), 0.039, "Sklena Vata"));
-            materialList.Add(new Material(Convert.ToDouble(textBoxPLasterboardWall.Text), 0.34, "Sadrokarton"));
-            return new Wall(Convert.ToDouble(textBoxWallArea.Text), materialList);
+
         }
 
-        private IWalls CreateRoof()
+        private void numericUpDown2_ValueChanged(object sender, EventArgs e)
         {
-            List<Material> materialList = new List<Material>();
-            materialList.Add(new Material(Convert.ToDouble(textBoxConcreteRoof.Text), 1.74, "Beton"));
-            materialList.Add(new Material(Convert.ToDouble(textBoxYtongRoof.Text), 0.09, "Ytong"));
-            materialList.Add(new Material(Convert.ToDouble(textBoxPolystyreneRoof.Text), 0.03, "Polystyren"));
-            materialList.Add(new Material(Convert.ToDouble(textBoxPlasterRoof.Text), 0.25, "Omietka"));
-            materialList.Add(new Material(Convert.ToDouble(textBoxGlassWoolRoof.Text), 0.039, "Sklena Vata"));
-            materialList.Add(new Material(Convert.ToDouble(textBoxPlasterBoardRoof.Text), 0.34, "Sadrokarton"));
-            return new Roof(Convert.ToDouble(textBoxRoofArea.Text), materialList);
+
+        }
+
+        private void numericUpDown3_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void numericUpDown4_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void numericUpDown5_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox4_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void numericWidth1Floor_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
