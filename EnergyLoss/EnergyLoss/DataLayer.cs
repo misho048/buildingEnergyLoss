@@ -52,10 +52,7 @@ namespace EnergyLoss
 
                     File.Create(save).Close();
 
-                }
-
-
-
+                }                
                 string[] splitLine;
                 string[] lines = File.ReadAllLines(save);
 

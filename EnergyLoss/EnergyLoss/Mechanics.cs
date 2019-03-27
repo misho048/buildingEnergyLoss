@@ -6,77 +6,40 @@ using System.Threading.Tasks;
 
 namespace EnergyLoss
 {
-      class Mechanics
+    class Mechanics
     {
         private List<IWalls> _house;
         private double _condition;
-        private double _tempDiff;
-        private double _heatingLength;
+        private double _heatingPeriod;
+        private double _heatingTemp;
+        private double _outsideTemp;
         private AreaView _areaView;
         private Dictionary<string, double> _mapOfTheMaterials;
 
-        public Mechanics(double condition,double tempDiff,double heatingLength)
-        {
-            
-            _condition = condition;
-            _heatingLength = heatingLength;
-            _tempDiff = tempDiff;
-            _mapOfTheMaterials =DataLayer.LoadFromFile();
-        }
-
-        public void CreateHouse(AreaView areaView)
+        public Mechanics(double condition, double heatingLength, AreaView areaView, double heatingTemp, double outsideTemp)
         {
             _areaView = areaView;
-            _house = new List<IWalls>();
-            _house.Add(CreateWall());
-            _house.Add(CreateRoof());
-            _house.Add(CreateFloor());
-
+            _condition = condition;
+            _heatingPeriod = heatingLength;
+            _mapOfTheMaterials = DataLayer.LoadFromFile();
+            _heatingTemp = heatingTemp;
+            _outsideTemp = outsideTemp;
         }
 
-        private IWalls CreateWall()
+        private void CreateFactory()
         {
-            List<Material> materialList = new List<Material>();
-            foreach (var item in _areaView.CreateWall())
-            {
-                materialList.Add(new Material(item.Item1, _mapOfTheMaterials[item.Item2], item.Item2));
-            }           
-
-           return new Wall(_areaView.ReturnArea()[1], materialList);
+            HouseFactory factory = new HouseFactory(_heatingTemp, _outsideTemp);
+            factory.CreateWall(_areaView.CreateWall(), _areaView.ReturnArea()[1]);
+            factory.CreateRoof(_areaView.CreateRoof(), _areaView.ReturnArea()[2]);
+            factory.CreateFloor(_areaView.CreateFloor(), _areaView.ReturnArea()[0]);
+            _house = factory.GetHouse();
         }
 
-        private IWalls CreateRoof()
+        public double DoCalculations()
         {
-            List<Material> materialList = new List<Material>();
-            foreach (var item in _areaView.CreateRoof())
-            {
-                materialList.Add(new Material(item.Item1, _mapOfTheMaterials[item.Item2], item.Item2));
-            }
-
-            return new Wall(_areaView.ReturnArea()[2], materialList);
-        }
-
-        private IWalls CreateFloor()
-        {
-            List<Material> materialList = new List<Material>();
-            foreach (var item in _areaView.CreateFloor())
-            {
-                materialList.Add(new Material(item.Item1, _mapOfTheMaterials[item.Item2], item.Item2));
-            }
-
-            return new Wall(_areaView.ReturnArea()[0], materialList);
-        }
-
-
-
-        public double DoSomething()
-        {
-            if (_tempDiff == 0)
-            {
-                _tempDiff = 1;
-            }
-            return (((_house.Sum(x => x.Calculate()))*_tempDiff)*_condition)*_heatingLength;
-
+            CreateFactory();
+            CalculateStuff calculations = new CalculateStuff(_house, _condition, _heatingPeriod);
+            return calculations.CalculateHeatLoss();
         }
 
     }

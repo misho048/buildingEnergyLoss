@@ -13,15 +13,15 @@ namespace EnergyLoss
 {
     public partial class AreaView : Form
     {
-     
-        public Dictionary<string, double> mapOfMaterial;
+
+        private Dictionary<string, double> _mapOfMaterial;
         private List<ComboBox> _listOfBoxes;
 
         public AreaView()
 
-        {            
+        {
             InitializeComponent();
-            mapOfMaterial = DataLayer.LoadFromFile();
+            _mapOfMaterial = DataLayer.LoadFromFile();
             FillComboBoxes();
         }
 
@@ -34,7 +34,7 @@ namespace EnergyLoss
             };
             foreach (var comboBox in _listOfBoxes)
             {
-                foreach (var key in mapOfMaterial)
+                foreach (var key in _mapOfMaterial)
                 {
 
                     comboBox.Items.Add(key.Key.ToString());
@@ -59,33 +59,12 @@ namespace EnergyLoss
 
         private void buttonAccept_Click(object sender, EventArgs e)
         {
-            if (true)
-            {
-                DialogResult = DialogResult.OK;
-            }
-            else
-            {
-                MessageBox.Show("Don't leave any empty values");
-            }
+
+            DialogResult = DialogResult.OK;
+
         }
 
-        //private bool CheckComboBoxes()
-        //{
-            
-        //    foreach(var box in _listOfBoxes)
-        //    {
-        //        try
-        //        {
-        //           string something= box.SelectedValue.ToString();
-        //        }
-        //        catch (NullReferenceException)
-        //        {
-        //            return false;
-        //        }
-                
-        //    }
-        //    return true;
-        //}
+
 
         public List<(double, string)> CreateFloor()
         {
@@ -96,7 +75,7 @@ namespace EnergyLoss
                 (Convert.ToDouble(numericWidth3Floor.Value),comboBox3Floor.SelectedItem.ToString()),
                 (Convert.ToDouble(numericWidth4Floor.Value),comboBox4Floor.SelectedItem.ToString()),
             };
-            return tupleList;       
+            return tupleList;
 
         }
 
@@ -111,7 +90,7 @@ namespace EnergyLoss
 
             };
             return tupleList;
-       
+
         }
 
         public List<(double, string)> CreateRoof()
@@ -124,8 +103,9 @@ namespace EnergyLoss
                 (Convert.ToDouble(numeric4Roof.Value),comboBox4Roof.SelectedItem.ToString())
 
             };
-            return tupleList;         
+            return tupleList;
         }
+
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -188,6 +168,11 @@ namespace EnergyLoss
         }
 
         private void numericWidth1Floor_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
         {
 
         }

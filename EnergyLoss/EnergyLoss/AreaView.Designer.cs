@@ -67,6 +67,9 @@
             this.label19 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.tabPageWindow.SuspendLayout();
             this.tabPageRoof.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericRoofArea)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numeric4Roof)).BeginInit();
@@ -101,6 +104,8 @@
             // 
             // tabPageWindow
             // 
+            this.tabPageWindow.Controls.Add(this.label6);
+            this.tabPageWindow.Controls.Add(this.label5);
             this.tabPageWindow.Location = new System.Drawing.Point(4, 22);
             this.tabPageWindow.Name = "tabPageWindow";
             this.tabPageWindow.Size = new System.Drawing.Size(791, 379);
@@ -725,6 +730,27 @@
             this.tabControl1.Size = new System.Drawing.Size(799, 405);
             this.tabControl1.TabIndex = 0;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label5.Location = new System.Drawing.Point(112, 32);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(147, 24);
+            this.label5.TabIndex = 25;
+            this.label5.Text = "Window Area: ";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label6.Location = new System.Drawing.Point(50, 107);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(209, 24);
+            this.label6.TabIndex = 26;
+            this.label6.Text = "Heat Flow Coeficient:";
+            // 
             // AreaView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -734,6 +760,8 @@
             this.Controls.Add(this.tabControl1);
             this.Name = "AreaView";
             this.Text = "Form1";
+            this.tabPageWindow.ResumeLayout(false);
+            this.tabPageWindow.PerformLayout();
             this.tabPageRoof.ResumeLayout(false);
             this.tabPageRoof.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericRoofArea)).EndInit();
@@ -800,5 +828,7 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
     }
 }

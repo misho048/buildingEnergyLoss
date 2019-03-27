@@ -13,7 +13,7 @@ namespace EnergyLoss
     public partial class MainView : Form
     {
         AreaView areaView = new AreaView();
-        
+
         public MainView()
         {
             InitializeComponent();
@@ -31,12 +31,12 @@ namespace EnergyLoss
 
         private void buttonArea_Click(object sender, EventArgs e)
         {
-            
+
             areaView.ShowDialog();
 
         }
 
-      
+
 
         private void buttonCount_Click(object sender, EventArgs e)
         {
@@ -46,11 +46,11 @@ namespace EnergyLoss
             }
             else
             {
-                double temperatureDifference = Math.Abs(Convert.ToDouble(textBoxAvgTemp.Text) - Convert.ToDouble(textBoxMinTemp.Text));
+
                 double heatingLenght = Convert.ToDouble(textBoxHeatingLenght.Text);
-                Mechanics Mech = new Mechanics(GetCondition(),temperatureDifference,heatingLenght);
-                Mech.CreateHouse(areaView);
-                MessageBox.Show(Convert.ToString(Mech.DoSomething()) + "and number of days is " + heatingLenght);
+                Mechanics Mech = new Mechanics(GetCondition(), heatingLenght, areaView, Convert.ToDouble(textBoxAvgTemp.Text), Convert.ToDouble(textBoxMinTemp.Text));
+
+                MessageBox.Show(Convert.ToString(Mech.DoCalculations()) + "and number of days is " + heatingLenght);
             }
         }
 
@@ -70,6 +70,11 @@ namespace EnergyLoss
                 counter += 0.06;
             }
             return counter;
+        }
+
+        private void textBoxHeatingLenght_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

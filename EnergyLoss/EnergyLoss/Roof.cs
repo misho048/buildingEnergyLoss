@@ -8,21 +8,15 @@ namespace EnergyLoss
 {
     class Roof : Wall
     {
-        //private double _area;
-        //private List<Material> _listOfMaterials;
+        
 
-        public Roof(double area, List<Material> listOfMaterials):base(area,listOfMaterials) 
+        public Roof(double area, List<Material> listOfMaterials,double heatingTemp,double outsideTemp):base(area,listOfMaterials,heatingTemp,outsideTemp) 
         {
             
-            //_area = area;
-            //_listOfMaterials = listOfMaterials;
+            
         }
 
-        //public double Calculate ()
-        //{
-
-        //    return (1 / (_listOfMaterials.Sum(x => x.CalculateR()))) * _area;
-        //}
+    
 
 
 

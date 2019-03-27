@@ -85,7 +85,7 @@
             this.textBoxAvgTemp.Name = "textBoxAvgTemp";
             this.textBoxAvgTemp.Size = new System.Drawing.Size(218, 20);
             this.textBoxAvgTemp.TabIndex = 3;
-            this.textBoxAvgTemp.Text = "0";
+            this.textBoxAvgTemp.Text = "22";
             // 
             // labelTemeperatureAvg
             // 
@@ -166,6 +166,7 @@
             this.textBoxHeatingLenght.Size = new System.Drawing.Size(218, 20);
             this.textBoxHeatingLenght.TabIndex = 11;
             this.textBoxHeatingLenght.Text = "1";
+            this.textBoxHeatingLenght.TextChanged += new System.EventHandler(this.textBoxHeatingLenght_TextChanged);
             // 
             // countryNormal
             // 
